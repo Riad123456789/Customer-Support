@@ -30,7 +30,7 @@ const Navber = () => {
 
               <ul
                 tabIndex={0}
-                className='menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'>
+                className='menu menu-sm dropdown-content mt-3 p-5 shadow bg-base-100 bg w-52'>
                 <li><a>Home</a></li>
                 <li><a>FAQ</a></li>
                 <li><a>Changelog</a></li>
@@ -38,9 +38,10 @@ const Navber = () => {
                 <li><a>Download</a></li>
                 <li><a>Contact</a></li>
                 <li className='mt-2'>
-                  <button className='btn btn-primary w-full'>
-                    New Ticket
-                  </button>
+                   <button className='btn text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]'>
+              <FaPlus />
+              New Ticket
+            </button>
                 </li>
               </ul>
             </div>

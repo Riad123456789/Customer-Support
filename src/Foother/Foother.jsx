@@ -3,7 +3,7 @@ import React from 'react'
 const Foother = () => {
   return (
     <div>
-      <footer className='bg-black text-white pt-14 pb-7'>
+      <footer className='bg-black text-white pt-14 pb-7 px-3'>
         <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <div>
             <h1 className='text-2xl font-bold text-blue-500 mb-3'>
