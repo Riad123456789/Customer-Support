@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaPlus } from "react-icons/fa6";
 
 const Navber = () => {
   return (
@@ -61,7 +62,8 @@ const Navber = () => {
               <p className='cursor-pointer hover:text-primary'>Contact</p>
             </div>
 
-            <button className='btn btn-primary'>
+            <button className='btn text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]'>
+              <FaPlus />
               New Ticket
             </button>
           </div>

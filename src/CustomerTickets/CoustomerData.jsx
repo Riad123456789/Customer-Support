@@ -5,7 +5,7 @@ const CoustomerData = ({ FetchDataPromise }) => {
   const Data = use(FetchDataPromise)
 
   return (
-    <div>
+    <div className='grid grid-cols-2 gap-6 mt-4 '>
       {Data.map(SingleData => (
         <CoustomerCard
           key={SingleData.ticketNumber}
