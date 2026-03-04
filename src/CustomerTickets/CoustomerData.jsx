@@ -1,7 +1,7 @@
 import React, { use } from 'react'
 import CoustomerCard from './CoustomerCard'
 
-const CoustomerData = ({ FetchDataPromise }) => {
+const CoustomerData = ({ FetchDataPromise, handleTask }) => {
   const Data = use(FetchDataPromise)
 
   return (
@@ -10,6 +10,7 @@ const CoustomerData = ({ FetchDataPromise }) => {
         <CoustomerCard
           key={SingleData.ticketNumber}
           SingleData={SingleData}
+          handleTask={handleTask}
         ></CoustomerCard>
       ))}
     </div>

@@ -8,7 +8,6 @@ function App () {
     <>
       <div className=''>
         <Navber></Navber>
-        <Banner></Banner>
         <AllCustomer></AllCustomer>
         <Foother></Foother>
       </div>
