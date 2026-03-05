@@ -10,13 +10,13 @@ const ResolvedTask = ({ Complete }) => {
           No resolved tasks yet.
         </p>
       ) : (
-        <div className='space-y-2 pt-2'>
+        <div className='space-y-3 pt-2'>
           {Complete.map((data) => (
             <div
               key={data.ticketNumber}
-              className='bg-white p-3 rounded-md shadow'
+              className='bg-[#E0E7FF] p-3 rounded-md shadow'
             >
-              <p>{data.title}</p>
+              <p className='font-semibold'>{data.title}</p>
             </div>
           ))}
         </div>
