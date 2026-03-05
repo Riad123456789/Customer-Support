@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Banner = ({Task}) => {
+const Banner = ({Task , Complete}) => {
   return (
     <div className='bg-gray-200 w-fulla'>
       <div className='max-w-7xl mx-auto py-7 md:py-16 '>
@@ -34,7 +34,7 @@ const Banner = ({Task}) => {
               />
               <div className='text-center'>
                 <p className='text-sm  md:text-lg font-medium'>Resolved</p>
-                <p className='text-lg md:text-5xl font-semibold mt-2'>0</p>
+                <p className='text-lg md:text-5xl font-semibold mt-2'>{Complete.length}</p>
               </div>
               <img
                 className='h-32 md:h-full object-contain scale-x-[-1]'
