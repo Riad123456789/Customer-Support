@@ -7,10 +7,8 @@ const Navber = () => {
       <div className='max-w-7xl mx-auto '>
         <div className='navbar p-0 py-3'>
 
-          {/* Left Side */}
           <div className='navbar-start'>
-            
-            {/* Mobile Menu */}
+
             <div className='dropdown'>
               <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
                 <svg
@@ -45,17 +43,13 @@ const Navber = () => {
                 </li>
               </ul>
             </div>
-
-            {/* Logo */}
-            <h1 className='text-base font-bold '>
+            <h1 className='text-sm md:text-base font-bold '>
               CS — Ticket System
             </h1>
           </div>
-
-          {/* Desktop Menu */}
           <div className='navbar-end hidden lg:flex items-center gap-10'>
-            <div className='flex items-center gap-8'>
-              <p className='cursor-pointer hover:text-primary'>Home</p>
+            <div className='flex items-center gap-8 r'>
+              <p className='cursor-pointer hover:text-primary '>Home</p>
               <p className='cursor-pointer hover:text-primary'>FAQ</p>
               <p className='cursor-pointer hover:text-primary'>Changelog</p>
               <p className='cursor-pointer hover:text-primary'>Blog</p>

@@ -3,6 +3,7 @@ import CoustomerData from './CoustomerData'
 import TaskStatus from './TaskStatus'
 import ResolvedTask from './ResolvedTask'
 import Banner from '../Banner/Banner'
+import { toast } from 'react-toastify'
 
 const FetchDataPromise = fetch('/FackData.json').then(res => res.json())
 
@@ -10,6 +11,10 @@ const AllCustomer = () => {
   const [Task, setTask] = useState([])
   const [Complete, setComplete] = useState([])
   const [customerData, setCustomerData] = useState([])
+
+    const notify = () => toast.success("Task successfully added");
+    const notify1 = () => toast.success("Task successfully completed");
+    // const notify2 = () => toast.warning("Task already exists!");
 
   useEffect(() => {
     FetchDataPromise.then(data => {
@@ -25,6 +30,7 @@ const AllCustomer = () => {
     }
 
     setTask(prev => [...prev, data])
+    notify()
   }
 
   const handleComplete = data => {
@@ -35,6 +41,7 @@ const AllCustomer = () => {
     setCustomerData(prev =>
       prev.filter(item => item.ticketNumber !== data.ticketNumber)
     )
+    notify1()
   }
 
   return (
@@ -45,10 +52,10 @@ const AllCustomer = () => {
         <div className='max-w-7xl mx-auto lg:flex justify-between gap-8 py-6'>
           <div className='flex-3 mb-10 md:mb-0'>
             <h1 className='font-semibold text-xl'>Customer Tickets</h1>
-
             <CoustomerData
               customerData={customerData}
               handleTask={handleTask}
+            
             />
           </div>
           <div className='flex-1'>

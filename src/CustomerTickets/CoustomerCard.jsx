@@ -11,15 +11,16 @@ const Coustomer = ({ SingleData, handleTask }) => {
   const HandleStatus = () => {
     setStatus(!statues)
     handleTask(SingleData)
+
   }
 
   return (
     <div
       onClick={HandleStatus}
-      className='shadow-md rounded-sm bg-white px-4 py-4 space-y-3 cursor-pointer hover:bg-emerald-200'
+      className='shadow-md rounded-sm bg-white px-2  md:px-4 py-4 space-y-3 cursor-pointer hover:bg-emerald-200'
     >
       <div className='flex justify-between'>
-        <h1 className='text-base font-semibold'>{title}</h1>
+        <h1 className='text-xs md:text-base font-semibold'>{title}</h1>
 
         <div
           className={`flex items-center gap-2 ${

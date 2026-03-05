@@ -4,7 +4,7 @@ const Banner = ({Task , Complete}) => {
   return (
     <div className='bg-gray-200 w-fulla'>
       <div className='max-w-7xl mx-auto py-7 md:py-16 '>
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-8 px-3'>
+        <div className='flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 px-3'>
           <div className='flex-1  bg-linear-to-r from-[#632EE3] to-[#9F62F2] w-full  md:h-52 rounded-md  text-white '>
             <div className='h-full flex justify-between items-center'>
               <img
